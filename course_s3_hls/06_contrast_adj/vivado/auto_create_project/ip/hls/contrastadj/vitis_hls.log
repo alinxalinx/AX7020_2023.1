@@ -1,0 +1,63 @@
+INFO: [HLS 200-10] Running '/home/alinx/Xilinx/Vitis_HLS/2023.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'alinx' on host 'alinx-System-Product-Name' (Linux_x86_64 version 5.4.0-164-generic) on Mon Oct 23 14:48:35 CST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
+INFO: [HLS 200-10] In directory '/media/alinx/nvme4t/yang/course_s3_tcl/06_contrast_adj/vivado/auto_create_project/ip/hls/contrastadj'
+Sourcing Tcl script '/media/alinx/nvme4t/yang/course_s3_tcl/06_contrast_adj/vivado/auto_create_project/ip/hls/contrastadj/contrast_adj/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: source /media/alinx/nvme4t/yang/course_s3_tcl/06_contrast_adj/vivado/auto_create_project/ip/hls/contrastadj/contrast_adj/solution1/export.tcl
+INFO: [HLS 200-1510] Running: open_project contrast_adj 
+INFO: [HLS 200-10] Opening project '/media/alinx/nvme4t/yang/course_s3_tcl/06_contrast_adj/vivado/auto_create_project/ip/hls/contrastadj/contrast_adj'.
+INFO: [HLS 200-1510] Running: set_top contrastadj 
+INFO: [HLS 200-1510] Running: add_files source/contrastadj.cpp -cflags -I/media/alinx/nvme4t/yang/Vitis_Libraries-main/vision/L1/include -std=c++0x 
+INFO: [HLS 200-10] Adding design file 'source/contrastadj.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files source/contrastadj.h 
+INFO: [HLS 200-10] Adding design file 'source/contrastadj.h' to the project
+INFO: [HLS 200-1510] Running: add_files source/xf_headers.hpp 
+INFO: [HLS 200-10] Adding design file 'source/xf_headers.hpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/media/alinx/nvme4t/yang/course_s3_tcl/06_contrast_adj/vivado/auto_create_project/ip/hls/contrastadj/contrast_adj/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-2 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+Sourcing tcl script '/home/alinx/Xilinx/Vivado/2023.1/scripts/Vivado_init.tcl'
+445 Beta devices matching pattern found, 56 enabled.
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/alinx/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'contrastadj_dadd_64ns_64ns_64_7_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'contrastadj_dadd_64ns_64ns_64_7_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'contrastadj_dmul_64ns_64ns_64_6_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'contrastadj_dmul_64ns_64ns_64_6_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'contrastadj_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'contrastadj_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'contrastadj_fpext_32ns_64_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'contrastadj_fpext_32ns_64_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'contrastadj_fptrunc_64ns_32_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'contrastadj_fptrunc_64ns_32_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'contrastadj_fsub_32ns_32ns_32_5_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'contrastadj_fsub_32ns_32ns_32_5_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'contrastadj_sitodp_32ns_64_5_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'contrastadj_sitodp_32ns_64_5_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'contrastadj_sitofp_32ns_32_5_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'contrastadj_sitofp_32ns_32_5_no_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/alinx/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 23 14:48:56 2023...
+INFO: [HLS 200-802] Generated output file contrast_adj/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 19.55 seconds. CPU system time: 0.62 seconds. Elapsed time: 22.7 seconds; current allocated memory: 14.293 MB.
+INFO: [HLS 200-112] Total CPU user time: 21.36 seconds. Total CPU system time: 0.91 seconds. Total elapsed time: 24.75 seconds; peak allocated memory: 1.352 GB.
