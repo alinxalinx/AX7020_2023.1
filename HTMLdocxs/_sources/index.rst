@@ -18,9 +18,9 @@ ZYNQ 7000 开发平台
 
 .. toctree::
    :maxdepth: 3
-   :caption: 公司简介
+   :caption: 用户手册
 
-   AX7020UserManualV2.2_CN/AX7020UserManualV2.2
+   AX7020UserManual_CN/AX7020UserManual
 
 .. toctree::
    :maxdepth: 2
